@@ -1,0 +1,26 @@
+{
+  "name": "eslint-sort-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.{mjs,js,ts,jsx,tsx,html,vue}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "imports": {
+    "#/constants": "./src/constants/index.mjs",
+    "#/utils/*.mjs": "./src/utils/*.mjs"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-sort": "^2.11.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
